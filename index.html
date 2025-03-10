@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dice Game</title>
+        <link href="./dicegame_s.css" rel="stylesheet">
+    </head>
+    <body class="b_container">
+        <div class="container" style="gap: 10px;">
+            <h1>Who wiil be the Winner??</h1>
+            <img class="img_trophy" src="./diceimages/winner.png">
+        </div>
+        <div class="container">
+            <div>
+                <p id="player1">6</p>
+                <img class="img_dice" src="./diceimages/dice6.png">
+            </div>
+            <div>
+                <p id="player2">6</p>
+                <img class="img_dice"src="./diceimages/dice6.png">
+            </div>
+        </div>
+        <div>
+            <button onclick="gameStart()" ><img id="start" src="./diceimages/start.webp"></button>
+        </div>
+        <script src="./dicegame_js.js"></script>
+    </body>
+</html>
