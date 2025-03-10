@@ -36,8 +36,8 @@ function gameStart(){
         result="Player 2  win's";
         imgh[0].setAttribute("src","./diceimages/winner.png");
         head_text.style.color="rgb(39, 12, 192)";
-        p1R.style.color="rgb(39, 12, 192)";
-        p2R.style.color="blue";
+        p1R.style.color="grey";
+        p2R.style.color="rgb(39, 12, 192)";
     }
     head_text.innerText=result;},4500);
 
