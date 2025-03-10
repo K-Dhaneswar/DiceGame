@@ -7,7 +7,7 @@ function gameStart(){
     var rand1=Math.floor(Math.random()*6)+1;
     var rand2=Math.floor(Math.random()*6)+1;
     var di=document.getElementsByClassName("img_dice");
-    rotation+=3600
+    rotation+=3600;
     di[0].style.transform="rotatex("+rotation+"deg)";
     di[1].style.transform="rotatex("+rotation+"deg)";
     setTimeout(() =>{
@@ -20,23 +20,23 @@ function gameStart(){
     if(rand1==rand2){
         result="Draw!!!";
         imgh[0].setAttribute("src","./diceimages/draw.webp");
-        head_text.style.color="green";
-        p1R.style.color="green";
-        p2R.style.color="green";
+        head_text.style.color="orange";
+        p1R.style.color="orange";
+        p2R.style.color="orange";
     }
     else if(rand1>rand2){
         result="Player 1  win's";
         imgh[0].setAttribute("src","./diceimages/winner.png");
-        head_text.style.color="red";
-        p1R.style.color="red";
+        head_text.style.color="crimson";
+        p1R.style.color="crimson";
         p2R.style.color="grey";
 
     }
     else{
-        result="Player 2  win's"
+        result="Player 2  win's";
         imgh[0].setAttribute("src","./diceimages/winner.png");
-        head_text.style.color="blue";
-        p1R.style.color="grey";
+        head_text.style.color="rgb(39, 12, 192);";
+        p1R.style.color="rgb(39, 12, 192);";
         p2R.style.color="blue";
     }
     head_text.innerText=result;},4500);
